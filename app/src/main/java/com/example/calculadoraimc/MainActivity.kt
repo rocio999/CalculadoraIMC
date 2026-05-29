@@ -198,7 +198,7 @@ fun PantallaResultado(
                     },
 
                     colors = ButtonDefaults.buttonColors(
-                        containerColor = Color.Black
+                        containerColor = Color.White
                     )
                 ) {
                     Text("Calcular otra vez")
