@@ -41,9 +41,13 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+
+
+
+//Pantalla1----UI(Interfaz)
 @Composable
 fun PantallaIngreso(navController: NavController){
-    var nombre by remember { mutableStateOf( value = "")  }
+    var nombre by remember { mutableStateOf( value = "")  }  //Logica de estado y validacion
     var peso by remember { mutableStateOf("") }
     var altura by remember { mutableStateOf("") }
 
@@ -53,7 +57,7 @@ fun PantallaIngreso(navController: NavController){
         verticalArrangement = Arrangement.Center
 
     ) {
-        Text("Calculadora IMC", fontSize = 30.sp, fontWeight = FontWeight.Bold)
+        Text("Calculadora IMC ", fontSize = 30.sp, fontWeight = FontWeight.Bold)
         Spacer(modifier = Modifier.height(30.dp))
 
         TextField(
@@ -81,11 +85,13 @@ fun PantallaIngreso(navController: NavController){
         )
         Spacer(modifier = Modifier.height(24.dp))
 
+        //Validaciones
+
         Button(onClick = {
             val p = peso.toDoubleOrNull() ?: 0.0
             val a = altura.toDoubleOrNull() ?: 1.0
 
-            val imc = p / (a * a)
+            val imc = p / (a * a) //Formula
 
             navController.navigate("resultado/$nombre/$imc")
         },
