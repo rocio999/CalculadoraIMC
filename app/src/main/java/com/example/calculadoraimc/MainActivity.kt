@@ -98,11 +98,9 @@ fun PantallaIngreso(navController: NavController){
             colors = ButtonDefaults.buttonColors(
                 containerColor = Color.Green)
         ) {
-            Text("Calcular IMC")
+            Text("Calcular tu IMC")
         }
     }}
-
-
 
 @Composable
 fun AppNavegacion(){
