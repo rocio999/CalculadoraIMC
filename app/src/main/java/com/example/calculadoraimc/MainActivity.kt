@@ -57,13 +57,13 @@ fun PantallaIngreso(navController: NavController){
         verticalArrangement = Arrangement.Center
 
     ) {
-        Text("Calculadora IMC ", fontSize = 30.sp, fontWeight = FontWeight.Bold)
+        Text("Calculadora IMC ", fontSize = 32.sp, fontWeight = FontWeight.Bold)
         Spacer(modifier = Modifier.height(30.dp))
 
         TextField(
             value = nombre,
             onValueChange = { nombre = it },
-            label = { Text("Ingresa tu nombre") }
+            label = { Text("Ingresar aqui tu nombre") }
 
         )
         Spacer(modifier = Modifier.height(10.dp))
@@ -72,14 +72,14 @@ fun PantallaIngreso(navController: NavController){
 
             value = peso,
             onValueChange = { peso = it },
-            label = { Text("Ingresa tu peso en kilogramos") },
+            label = { Text("Ingresa aqui tu peso en kilogramos") },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
         )
         Spacer(modifier = Modifier.height(8.dp))
         TextField(
             value = altura,
             onValueChange = { altura = it },
-            label = { Text("Ingresa tu altura en metros") },
+            label = { Text("Ingresa aqui tu altura en metros") },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
 
         )
