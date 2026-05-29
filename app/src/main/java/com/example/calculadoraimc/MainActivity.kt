@@ -58,7 +58,7 @@ fun PantallaIngreso(navController: NavController){
 
     ) {
         Text("Calculadora IMC ", fontSize = 32.sp, fontWeight = FontWeight.Bold)
-        Spacer(modifier = Modifier.height(30.dp))
+        Spacer(modifier = Modifier.height(29.dp))
 
         TextField(
             value = nombre,
