@@ -161,7 +161,7 @@ fun PantallaResultado(
                 verticalArrangement = Arrangement.Center
             ) {
 
-                Text("Resultado IMC",
+                Text("Resultado del IMC",
                     fontSize = 24.sp,
                     fontWeight = FontWeight.Bold)
 
